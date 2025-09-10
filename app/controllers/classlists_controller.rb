@@ -8,6 +8,7 @@ class ClasslistsController < ApplicationController
 
   # GET /classlists/1 or /classlists/1.json
   def show
+    @classlist = Classlist.find(params[:id])
   end
 
   # GET /classlists/new
